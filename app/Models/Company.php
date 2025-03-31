@@ -14,4 +14,9 @@ class Company extends Model
     protected $fillable = [
         'primary_activity_company' 
     ];
+    public function companyHeadquarters()
+    {
+        return $this->belongsTo('app/Models/Company_barrack');
+    }
 }
+

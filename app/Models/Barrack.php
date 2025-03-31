@@ -17,4 +17,10 @@ class Barrack extends Model
     ];
 
     
+        public function soldier()
+        {
+            return $this->hasMany('app/Models/Soldier');
+        }
+    
+    
 }
